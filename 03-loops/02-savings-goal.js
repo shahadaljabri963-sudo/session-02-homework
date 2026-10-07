@@ -16,3 +16,19 @@
 //   Goal reached in 7 months!
 
 // your code here
+const savingsGoal = 100;
+const monthlySavings = 15;
+let totalSavings = 0;
+let month = 0;  
+
+while (totalSavings < savingsGoal) {
+  month++;
+  totalSavings += monthlySavings;
+  console.log(`Month ${month}: ${totalSavings} OMR`);
+}
+
+console.log(`Goal reached in ${month} months!`);    
+
+
+
+
