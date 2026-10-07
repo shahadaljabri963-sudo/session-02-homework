@@ -12,3 +12,11 @@
 const cities = ["Muscat", "Salalah", "Sohar", "Nizwa", "Sur"];
 
 // your code here
+
+const reversed = [];
+for (let i = cities.length - 1; i >= 0; i--) {
+  reversed.push(cities[i]);
+}
+
+console.log(reversed);
+
