@@ -21,3 +21,14 @@ const order = [
 ];
 
 // your code here
+const subtotal = order.reduce((sum, item) => {
+  const lineTotal = item.price * item.quantity;
+  console.log(`${item.name} x ${item.quantity} = ${lineTotal} baisa`);
+  return sum + lineTotal;
+}, 0);
+
+const discount = subtotal >= 5000 ? subtotal * 0.1 : 0;
+const total = subtotal - discount;
+console.log(`Subtotal: ${subtotal} baisa`);
+console.log(`Discount: ${discount} baisa`);
+console.log(`Total: ${total} baisa`); 
