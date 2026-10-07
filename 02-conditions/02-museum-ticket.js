@@ -12,3 +12,18 @@
 //   Ticket price: 1 OMR
 
 // your code here
+    
+const age = 25;
+const isStudent = true;
+
+let ticketPrice;
+
+if (age < 6) {
+  ticketPrice = "free";
+} else if (age >= 60 || isStudent) {
+  ticketPrice = "1 OMR";
+} else {
+  ticketPrice = "2 OMR";
+}
+
+console.log(`Ticket price: ${ticketPrice}`);
